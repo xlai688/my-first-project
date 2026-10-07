@@ -40,3 +40,8 @@ npm run build
 数据来源：[exam-data/NETEMVocabulary](https://github.com/exam-data/NETEMVocabulary)，文件 [netem_full_list.json](https://github.com/exam-data/NETEMVocabulary/blob/master/netem_full_list.json)。上游说明其词表依据 2024 年英语（一）大纲整理，释义经初步校对；这是社区整理数据，不是本项目自行发布的官方词表。
 
 词库数据及其改编遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)：署名、非商业使用、相同方式共享。原始数据保存于 `src/data/netem_full_list.json`；`src/words.ts` 将中文字段映射到游戏字段，保留序号、词频、其他拼写、分类及子分类。源数据没有词性和例句，这些字段留空。游戏熟练度、学习状态和答题次数来自个人存档，与静态词条分离。商业用途需另行取得相应授权。
+
+
+## 学习模式范围
+
+当前学习内容严格收敛为两种：**单词挑战**（英文单词选择唯一中文释义）和**历年考研真题阅读**（按年份、英语一/二、Text、题号组织真实材料）。项目当前没有合法真题原文，因此阅读页显示“等待导入真题数据”，不会伪造模拟题。词库、错词记录、学习进度和基地仅作为辅助反馈。已移除英译中输入、中译英、拼写、听力、配对、模拟阅读及自动生成阅读题。
