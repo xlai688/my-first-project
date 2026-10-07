@@ -32,3 +32,11 @@ npm run build
 - **成长记录**：按日期查看练习数量和累计成长。
 
 所有进度（金币、等级、建筑、熟练度、重点复习和学习记录）会自动保存到当前浏览器的 `localStorage`。清除网站数据会重置存档。
+
+## 完整词库与许可
+
+词库包含 **5,530 条**社区整理的考研大纲相关词汇，替代原先 60 个示例词；全部词汇开放挑战和搜索，图鉴每页显示 24 条，单词营预览前 24 条。挑战优先抽取未学习、低熟练度及曾答错词汇。旧版 `word-tribe-v1` 存档仍按英文单词关联，不重置金币、经验、建筑或学习记录。
+
+数据来源：[exam-data/NETEMVocabulary](https://github.com/exam-data/NETEMVocabulary)，文件 [netem_full_list.json](https://github.com/exam-data/NETEMVocabulary/blob/master/netem_full_list.json)。上游说明其词表依据 2024 年英语（一）大纲整理，释义经初步校对；这是社区整理数据，不是本项目自行发布的官方词表。
+
+词库数据及其改编遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)：署名、非商业使用、相同方式共享。原始数据保存于 `src/data/netem_full_list.json`；`src/words.ts` 将中文字段映射到游戏字段，保留序号、词频、其他拼写、分类及子分类。源数据没有词性和例句，这些字段留空。游戏熟练度、学习状态和答题次数来自个人存档，与静态词条分离。商业用途需另行取得相应授权。
